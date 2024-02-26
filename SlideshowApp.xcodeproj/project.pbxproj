@@ -13,6 +13,7 @@
 		A9029DB62B875A8D001F440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9029DB42B875A8D001F440A /* Main.storyboard */; };
 		A9029DB82B875A8E001F440A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9029DB72B875A8E001F440A /* Assets.xcassets */; };
 		A9029DBB2B875A8E001F440A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9029DB92B875A8E001F440A /* LaunchScreen.storyboard */; };
+		A9029DC32B87699E001F440A /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9029DC22B87699E001F440A /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A9029DB72B875A8E001F440A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9029DBA2B875A8E001F440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9029DBC2B875A8E001F440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9029DC22B87699E001F440A /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A9029DAE2B875A8D001F440A /* AppDelegate.swift */,
 				A9029DB02B875A8D001F440A /* SceneDelegate.swift */,
 				A9029DB22B875A8D001F440A /* ViewController.swift */,
+				A9029DC22B87699E001F440A /* ZoomViewController.swift */,
 				A9029DB42B875A8D001F440A /* Main.storyboard */,
 				A9029DB72B875A8E001F440A /* Assets.xcassets */,
 				A9029DB92B875A8E001F440A /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				A9029DB32B875A8D001F440A /* ViewController.swift in Sources */,
 				A9029DAF2B875A8D001F440A /* AppDelegate.swift in Sources */,
 				A9029DB12B875A8D001F440A /* SceneDelegate.swift in Sources */,
+				A9029DC32B87699E001F440A /* ZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
