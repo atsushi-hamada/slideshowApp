@@ -62,10 +62,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="eZH-1E-PNk" id="yfJ-nE-PYN"/>
                         <outlet property="image" destination="kqS-R0-0CH" id="c3a-4e-DiY"/>
-                        <outlet property="modorubutton" destination="eZH-1E-PNk" id="6H6-Zv-4yK"/>
-                        <outlet property="saiseibuttonname" destination="Rff-pe-cgV" id="2IQ-Pl-KHu"/>
-                        <outlet property="susumubutton" destination="cie-gz-mII" id="GOY-Em-cEx"/>
+                        <outlet property="nextButton" destination="cie-gz-mII" id="E96-1I-OA3"/>
+                        <outlet property="playButton" destination="Rff-pe-cgV" id="0XY-BL-ttx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
