@@ -19,10 +19,19 @@ class ViewController: UIViewController {
     var count = 0
     var playState = 0
     
+    @IBAction func unwind(_segue: UIStoryboardSegue){
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        image.isUserInteractionEnabled = true
+        image.addGestureRecognizer(UITapGestureRecognizer(target: self,action:#selector(imageTapped(_:))))
     }
+    @objc func imageTapped(_ sender: UITapGestureRecognizer){
+        self.performSegue(withIdentifier: "toZoom", sender: self)
+        }
+    
     @objc func updateTimer(_ timer: Timer){
         if playState == 1{
             self.count += 1

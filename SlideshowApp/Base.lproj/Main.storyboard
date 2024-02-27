@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazo1" translatesAutoresizingMaskIntoConstraints="NO" id="kqS-R0-0CH">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazo1" translatesAutoresizingMaskIntoConstraints="NO" id="kqS-R0-0CH">
                                 <rect key="frame" x="-3.6666666666666572" y="159" width="400.33333333333326" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="6jI-bT-bzw"/>
@@ -66,6 +66,7 @@
                         <outlet property="image" destination="kqS-R0-0CH" id="c3a-4e-DiY"/>
                         <outlet property="nextButton" destination="cie-gz-mII" id="E96-1I-OA3"/>
                         <outlet property="playButton" destination="Rff-pe-cgV" id="0XY-BL-ttx"/>
+                        <segue destination="Bjp-x0-dlw" kind="show" identifier="toZoom" id="0uK-of-0ik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -77,30 +78,32 @@
             <objects>
                 <viewController id="Bjp-x0-dlw" customClass="ZoomViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vUq-F4-QJH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gazo1" translatesAutoresizingMaskIntoConstraints="NO" id="l1i-OP-ygu">
-                                <rect key="frame" x="-4" y="159" width="400.33333333333326" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gazo1" translatesAutoresizingMaskIntoConstraints="NO" id="l1i-OP-ygu">
+                                <rect key="frame" x="16" y="159" width="361" height="361"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="8ea-2Y-08u"/>
-                                    <constraint firstAttribute="width" constant="400" id="WY5-nK-tK3"/>
+                                    <constraint firstAttribute="width" secondItem="l1i-OP-ygu" secondAttribute="height" multiplier="1:1" id="Aii-Jh-7vD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXc-Gn-1bL">
-                                <rect key="frame" x="167" y="509" width="59" height="35"/>
+                                <rect key="frame" x="167" y="620" width="59" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
-                                    <segue destination="i20-AI-RYW" kind="unwind" unwindAction="unwind:" id="4Jl-vC-FLS"/>
+                                    <segue destination="i20-AI-RYW" kind="unwind" unwindAction="unwind:" id="mr4-xl-p1Z"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2dq-w9-7Cp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="l1i-OP-ygu" firstAttribute="centerX" secondItem="vUq-F4-QJH" secondAttribute="centerX" id="8IF-dM-Rg2"/>
                             <constraint firstItem="l1i-OP-ygu" firstAttribute="top" secondItem="2dq-w9-7Cp" secondAttribute="top" constant="100" id="Git-pb-Uhs"/>
                             <constraint firstItem="cXc-Gn-1bL" firstAttribute="centerX" secondItem="vUq-F4-QJH" secondAttribute="centerX" id="VBT-Zo-1Sl"/>
+                            <constraint firstItem="l1i-OP-ygu" firstAttribute="leading" secondItem="2dq-w9-7Cp" secondAttribute="leading" constant="16" id="YJD-jZ-Zvg"/>
+                            <constraint firstItem="2dq-w9-7Cp" firstAttribute="trailing" secondItem="l1i-OP-ygu" secondAttribute="trailing" constant="16" id="ZYk-Jg-eOG"/>
                             <constraint firstItem="cXc-Gn-1bL" firstAttribute="top" secondItem="l1i-OP-ygu" secondAttribute="bottom" constant="100" id="yMO-Mv-blK"/>
                         </constraints>
                     </view>
@@ -109,7 +112,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MV-T5-ZED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="i20-AI-RYW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="697" y="11"/>
+            <point key="canvasLocation" x="696.94656488549617" y="10.563380281690142"/>
         </scene>
     </scenes>
     <resources>
